@@ -1,0 +1,85 @@
+<!-- botones_whatsapp.html -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botones de Contacto</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden; /* Evita la barra de desplazamiento horizontal */
+        }
+
+        .botones-container {
+            position: fixed;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            text-align: left;
+            background-color: transparent; /* Fondo transparente para ver la imagen de fondo */
+            padding: 20px;
+            box-shadow: 5px 0 15px rgba(0, 0, 0, 0.1);
+            z-index: 1000; /* Asegura que los botones estén por encima del contenido */
+        }
+
+        .whatsapp-button,
+        .instagram-button,
+        .facebook-button{
+            margin: 5px;
+            padding: 0; /* Eliminamos el relleno para adaptarnos al tamaño de la imagen */
+            width: 75px; /* Ancho del botón */
+            height: 120px; /* Altura del botón */
+            border-radius: 0%; /* Hacemos el botón circular */
+            cursor: pointer;
+            border: none;
+            outline: none;
+            display: block;
+        }
+
+        .whatsapp-button {
+            background: url('Print_Glyph_Green.png') center center / contain no-repeat; /* Agrega la imagen del logo de WhatsApp como fondo */
+        }
+
+        .instagram-button {
+            background: url('Instagram_Glyph_Gradient.png') center center / contain no-repeat; /* Agrega la imagen del logo de Instagram como fondo */
+        }
+
+        .facebook-button {
+            background: url('Facebook_Logo_Primary.png') center center / contain no-repeat; /* Agrega la imagen de otro logo como fondo */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Botones de Contacto -->
+    <div class="botones-container">
+        <!-- Botón de WhatsApp -->
+        <a href="https://api.whatsapp.com/send?phone=573042245899" target="_blank">
+            <button class="whatsapp-button" title="Contactar por WhatsApp 1"></button>
+        </a>
+
+        <!-- Botón de WhatsApp 2 -->
+        <a href="https://api.whatsapp.com/send?phone=573015084203" target="_blank">
+            <button class="whatsapp-button" title="Contactar por WhatsApp 2"></button>
+        </a>
+        <!-- Botón de facebook -->
+        <a href="https://www.facebook.com/TU_PAGINA_DE_FACEBOOK" target="_blank">
+            <button class="facebook-button" title="Seguir en Facebook"></button>
+        </a>
+
+        <!-- Botón de Instagram -->
+        <a href="https://www.instagram.com/TU_USUARIO_DE_INSTAGRAM" target="_blank">
+            <button class="instagram-button" title="Seguir en Instagram"></button>
+        </a>
+
+      
+        
+        <!-- Agrega más botones según sea necesario -->
+    </div>
+
+</body>
+</html>
